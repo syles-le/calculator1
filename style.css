@@ -51,4 +51,35 @@ button {
     border-radius: 50%;
     border-style: none;
     box-shadow: 5px 5px 10px black;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: orange;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s
+}
+
+#ac:hover, #c:hover {
+    background-color: red;
+    color: white;
+    transition: all 0.2s;
+}
+
+#percent:hover, #divide:hover, #plus:hover, #minus:hover, #times:hover {
+    background-color: aqua;
+    transition: all 0.2s
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover,
+#seven:hover, #eight:hover, #nine:hover, #zero:hover, #decimal:hover {
+    background-color: gray;
+    transition: all 0.2s
+}
+
+#equals:hover {
+    background-color: green;
+    color: white;
+    transition: all 0.2s
 }
