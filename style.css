@@ -14,7 +14,9 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 90px 90px 90px 90px;
-    grid-template-rows: 130px 130px 130px 130px 130px
+    grid-template-rows: 85px 85px 85px 85px 85px;
+    justify-content: space-evenly;
+    margin-left: 10px
 }
 
 h3 {
@@ -41,5 +43,12 @@ h3 {
 
 body {
     background: #EF925C
+}
 
+button {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border-style: none;
+    box-shadow: 5px 5px 10px black;
 }
