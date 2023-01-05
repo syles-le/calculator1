@@ -1,11 +1,12 @@
 #calc-container {
     background-color: #2B2827;
-    width: 60%;
-    height: 550px;
+    width: 400px;;
+    height: 570px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
+    margin-top: 50px;
 
 }
 
@@ -20,7 +21,6 @@
 }
 
 #currentOperationScreen {
-    color: white;
     border-style: none;
     display: flex;
     align-items: center;
@@ -29,9 +29,14 @@
     padding: 10px;
     margin-top: 20px;
     border-radius: 7px;
-    height: 60px;
+    height: 70px;
     background-color: #95C85D;
     box-shadow: 0px 5px 8px black inset;
+    color: black;
+    font-family: sans-serif;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -84,3 +89,15 @@ button:hover {
     color: white;
     transition: all 0.2s
 }
+
+#lastOperationScreen {
+    height: 20px;
+    width: 340px;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-top: 8px;
+    position: relative;
+    top: 45px;
+}
+

@@ -37,7 +37,7 @@ setOperation(button.textContent))
 function appendNumber(number) {
     if (currentOperationScreen.textContent === "0" || shouldResetScreen) 
         resetScreen();
-        currentOperationScreen.textContent += number
+    currentOperationScreen.textContent += number
 }
 
 function resetScreen() {
@@ -54,13 +54,11 @@ function clear() {
 };
 
 function appendPoint() {
-    if (shouldResetScreen) resetScreen();
-    if(currentOperationScreen.textContent === "") {
-        currentOperationScreen.textContent = "0";
-    }
-    if (currentOperationScreen.textContent.includes(".")) {
-        return currentOperationScreen.textcontent += ".";
-    }
+    if (shouldResetScreen) resetScreen()
+    if (currentOperationScreen.textContent === "")
+        currentOperationScreen.textContent = "0"
+    if (currentOperationScreen.textContent.includes(".")) return
+    currentOperationScreen.textcontent += "."
 };
 
 function deleteNumber() {
