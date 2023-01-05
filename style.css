@@ -19,7 +19,7 @@
     margin-left: 10px
 }
 
-h3 {
+#currentOperationScreen {
     color: white;
     border-style: none;
     display: flex;
@@ -67,7 +67,7 @@ button:hover {
     transition: all 0.2s;
 }
 
-#percent:hover, #divide:hover, #plus:hover, #minus:hover, #times:hover {
+.operator-buttons:hover {
     background-color: aqua;
     transition: all 0.2s
 }
@@ -75,11 +75,12 @@ button:hover {
 #one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover,
 #seven:hover, #eight:hover, #nine:hover, #zero:hover, #decimal:hover {
     background-color: gray;
-    transition: all 0.2s
+    transition: all 0.2s;
+    color: white;
 }
 
 #equals:hover {
-    background-color: green;
+    background-color: #1EE223;
     color: white;
     transition: all 0.2s
 }
