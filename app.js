@@ -73,7 +73,7 @@ function setOperation(operator) {
     if (currentOperation !== null) evaluate();
     firstOperand = currentOperationScreen.textContent;
     currentOperation = operator;
-    lastOperationScreen.textContent = `${firstOperand} ${currentOperand}`;
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`;
     shouldResetScreen = true
 };
 
@@ -88,9 +88,13 @@ function evaluate() {
     currentOperationScreen.textContent = roundResult(
         operate(currentOperation, firstOperand, secondOperand)
     );
-    lastOperationScreen.textContent = `${firstOperand} ${currentOpation}
+    lastOperationScreen.textContent = `${firstOperand} ${currentOperation}
     ${secondOperand} =`;
     currentOperation = null
+}
+
+function roundResult(number) {
+    return Math.round(number * 1000) / 1000
 }
 
 
